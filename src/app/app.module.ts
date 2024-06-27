@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { HomeComponent } from './page/home/home.component';
 import { PostComponent } from './page/post/post.component';
 import { CharactersComponent } from './page/characters/characters.component';
@@ -14,11 +13,12 @@ import { ThreatsComponent } from './page/threats/threats.component';
 import { StoryComponent } from './page/story/story.component';
 import { WorldComponent } from './page/story/world/world.component';
 import { ConfigComponent } from './page/config/config.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     HomeComponent,
     PostComponent,
     CharactersComponent,
@@ -32,7 +32,9 @@ import { ConfigComponent } from './page/config/config.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    NavBarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CharactersComponent } from './page/characters/characters.component';
 import { SheetComponent } from './page/characters/sheet/sheet.component';
