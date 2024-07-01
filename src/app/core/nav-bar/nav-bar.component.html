@@ -1,57 +1,18 @@
 <div id="main-nav-bar">
-    <ul>
-        <li>
-            <button>
-                <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
-                <i class="fas fa-search"></i>
-                <label>Pesquisa</label>
-            </button>
-        </li>
-    </ul>
+    <div id="pesquisa">
+        <button (click)="navegar('/posts')">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+            <i class="fas fa-search"></i>
+            <label>Pesquisa</label>
+        </button>
+    </div>
 
-    <ul>
-        <li>
-            <button>
-                <i class="fas fa-castle" id="posts"></i>
-                <label for="posts">Tormenta 20</label>
+    <div id="modulos">
+        <div *ngFor="let item of modulos">
+            <button (click)="navegar(item.rota)" [id]="item.id">
+                <i [ngClass]="item.icone"></i>
+                <label>{{item.titulo}}</label>
             </button>
-        </li>
-        <li>
-            <button>
-                <i class="fas fa-user" id="player"></i>
-                <label for="player">Jogadores</label>
-            </button>
-        </li>
-        <li>
-            <button title="Grupo">
-                <i class="fas fa-users"></i>
-                <label for="group">Grupo</label>
-            </button>
-        </li>
-        <li>
-            <button title="NPC">
-                <i class="fas fa-link"></i>
-                <label for="npc">NPC</label>
-            </button>
-        </li>
-        <li>
-            <button title="Ameaças">
-                <i class="far fa-swords"></i>
-                <label for="Ameaças">Ameaças</label>
-            </button>
-        </li>
-        <li>
-
-            <button title="Historia">
-                <i class="fas fa-book"></i>
-                <label for="Historia">História</label>
-            </button>
-        </li>
-        <li>
-            <button title="Config">
-                <i class="fas fa-cog"></i>
-                <label for="Config">Configurações</label>
-            </button>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>

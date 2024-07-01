@@ -5,11 +5,12 @@ import { SheetComponent } from './page/characters/sheet/sheet.component';
 import { ConfigComponent } from './page/config/config.component';
 import { GroupComponent } from './page/group/group.component';
 import { HomeComponent } from './page/home/home.component';
-import { NpcsComponent } from './page/npcs/npcs.component';
 import { PostComponent } from './page/post/post.component';
 import { StoryComponent } from './page/story/story.component';
 import { WorldComponent } from './page/story/world/world.component';
 import { ThreatsComponent } from './page/threats/threats.component';
+import { NpcsComponent } from './page/characters/npcs/npcs.component';
+import { PlayersComponent } from './page/characters/players/players.component';
 
 const routes: Routes = [
   {
@@ -26,35 +27,39 @@ const routes: Routes = [
     component: PostComponent
   },
   {
-    path: 'CharactersComponent',
-    component: CharactersComponent
-  },
-  {
-    path: 'CharactersComponent/SheetComponent',
-    component: SheetComponent
-  },
-  {
-    path: 'GroupComponent',
+    path: 'group',
     component: GroupComponent
   },
   {
-    path: 'NpcsComponent',
+    path: 'characters',
+    component: CharactersComponent
+  },
+  {
+    path: 'characters/player',
+    component: PlayersComponent
+  },
+  {
+    path: 'characters/sheet',
+    component: SheetComponent
+  },
+  {
+    path: 'characters/npcs',
     component: NpcsComponent
   },
   {
-    path: 'ThreatsComponent',
+    path: 'threats',
     component: ThreatsComponent
   },
   {
-    path: 'StoryComponent',
+    path: 'story',
     component: StoryComponent
   },
   {
-    path: 'StoryComponent/WorldComponent',
+    path: 'story/world',
     component: WorldComponent
   },
   {
-    path: 'ConfigComponent',
+    path: 'config',
     component: ConfigComponent
   }
 ]
