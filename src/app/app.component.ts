@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  standalone: true,
+  imports: [],
+  template: `
+    <h1>Default</h1>
+  `,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'gerenciar_mesa_tormenta20_angular';
+  title = 'default';
 }
