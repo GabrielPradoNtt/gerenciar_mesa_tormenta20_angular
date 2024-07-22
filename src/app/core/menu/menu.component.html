@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="menu_pesquisa">
+        <div class="pesquisa_botao">
+            <mat-icon 
+                aria-hidden="false" 
+                aria-label="Example home icon" 
+                fontIcon="search"
+            ></mat-icon>
+        </div>
+    </div>
+    <div class="menu">
+        <div *ngFor="let botao of listaBotoes" >
+            <app-botoes-menu 
+                [nome]="botao.nome"
+                [link]="botao.link"
+                [icone]="botao.icone"
+            ></app-botoes-menu>
+        </div>
+    </div>
+</div>

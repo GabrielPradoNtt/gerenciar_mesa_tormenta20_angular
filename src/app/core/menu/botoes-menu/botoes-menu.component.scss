@@ -1,0 +1,31 @@
+.botao_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5px;
+
+    .botao_icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: transparent;
+        color: var(--cor-secundaria);
+    
+        .selecionado{
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto-secundaria);
+        }
+    }
+
+    label {
+        margin-top: 4px;
+        font-size: 10pt;
+        font-weight: 400;
+        color: var(--cor-secundaria);
+        text-align: center;
+    }
+}
