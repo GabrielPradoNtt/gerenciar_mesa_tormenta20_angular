@@ -1,6 +1,6 @@
 <div class="container">
     <div class="menu_pesquisa">
-        <div class="pesquisa_botao">
+        <div class="pesquisa_botao" (click)="navigatePesquisa()" [ngClass]=" subRoute === 'pesquisar' ? 'active' : '' ">
             <mat-icon 
                 aria-hidden="false" 
                 aria-label="Example home icon" 
@@ -14,6 +14,7 @@
                 [nome]="botao.nome"
                 [link]="botao.link"
                 [icone]="botao.icone"
+                [ativo]="subRoute == botao.id"
             ></app-botoes-menu>
         </div>
     </div>

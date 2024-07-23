@@ -22,6 +22,11 @@
         height: 56px;
         border-radius: 16px;
         background-color: var(--cor-tercearia);
+        cursor: pointer;
+
+        &.active{
+            background-color: var(--cor-tercearia-ativa);
+        }
     }
 }
 .menu {
