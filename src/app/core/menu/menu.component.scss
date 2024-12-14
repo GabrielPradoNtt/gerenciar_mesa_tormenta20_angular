@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.menu_pesquisa {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    .pesquisa_botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background-color: var(--cor-tercearia);
+        cursor: pointer;
+
+        &.active{
+            background-color: var(--cor-tercearia-ativa);
+        }
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}

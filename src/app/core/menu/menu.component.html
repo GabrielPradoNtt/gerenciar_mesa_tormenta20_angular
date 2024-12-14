@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="menu_pesquisa">
+        <div class="pesquisa_botao" (click)="navigatePesquisa()" [ngClass]=" subRoute === 'pesquisar' ? 'active' : '' ">
+            <mat-icon 
+                aria-hidden="false" 
+                aria-label="Example home icon" 
+                fontIcon="search"
+            ></mat-icon>
+        </div>
+    </div>
+    <div class="menu">
+        <div *ngFor="let botao of listaBotoes" >
+            <app-botoes-menu 
+                [nome]="botao.nome"
+                [link]="botao.link"
+                [icone]="botao.icone"
+                [ativo]="subRoute == botao.id"
+            ></app-botoes-menu>
+        </div>
+    </div>
+</div>

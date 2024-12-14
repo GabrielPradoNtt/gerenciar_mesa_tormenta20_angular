@@ -1,0 +1,35 @@
+.botao_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 5px;
+    cursor: pointer;
+
+    &.active{
+        .botao_icone {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto-secundaria);
+        }
+    }
+
+    .botao_icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 32px;
+        border-radius: 8px;
+        background-color: transparent;
+        color: var(--cor-secundaria);
+    }
+
+    label {
+        margin-top: 0;
+        font-size: 10pt;
+        font-weight: 400;
+        color: var(--cor-secundaria);
+        text-align: center;
+        cursor: pointer;
+    }
+}
